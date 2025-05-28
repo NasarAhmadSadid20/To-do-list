@@ -1,0 +1,149 @@
+body {
+  direction: rtl;
+  font-family: dana;
+  background: #f0f4f8;
+  padding: 30px;
+  color: #333;
+
+}
+*{
+ font-family: dana;
+    
+ 
+}
+
+
+h2 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 25px;
+  color: #2c3e50;
+}
+
+#todoForm {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+input {
+  padding: 12px 15px;
+  width: 250px;
+  border-radius: 12px;
+  border: 1.5px solid #bdc3c7;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 8px rgba(52, 152, 219, 0.3);
+}
+
+button {
+  padding: 12px 25px;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background: #2980b9;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+li {
+  background: white;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1rem;
+}
+
+.actions button {
+  margin-left: 10px;
+  padding: 7px 15px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.actions .edit {
+  background-color: #f1c40f;
+  color: #2c3e50;
+}
+
+.actions .edit:hover {
+  background-color: #d4ac0d;
+}
+
+.actions .delete {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.actions .delete:hover {
+  background-color: #c0392b;
+}
+
+
+
+/*  ریسپانسیو */
+
+/* ریسپانسیو برای صفحه‌های کوچک (گوشی و تبلت) */
+/* ریسپانسیو برای موبایل و صفحه‌های کوچک */
+@media (max-width: 600px) {
+  #todoApp {
+    padding: 20px 15px;
+  }
+
+  #todoForm form {
+    flex-direction: column;
+    gap: 15px;
+    align-items: stretch;
+  }
+
+  #taskInput, #taskForm button {
+    width: 100%;       /* هر دو 100% عرض */
+    min-width: auto;
+    box-sizing: border-box;
+  }
+
+  li {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 1rem;
+  }
+
+  .actions {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .actions button {
+    flex: 1;
+    margin-left: 0;
+    margin-right: 10px;
+  }
+}
