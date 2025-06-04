@@ -2,7 +2,7 @@ body {
   direction: rtl;
   font-family: dana;
   background: #f0f4f8;
-  padding: 30px;
+  padding: 31px;
   color: #333;
 
 }
@@ -31,7 +31,7 @@ h2 {
 input {
   padding: 12px 15px;
   width: 250px;
-  border-radius: 12px;
+  border-radius: 13px;
   border: 1.5px solid #bdc3c7;
   font-size: 1rem;
   transition: border-color 0.3s ease;
